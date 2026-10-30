@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-hot-toast'
-import { add, remove } from '../redux/Slices/cartSlice'
+import { add, remove } from '../redux/Slices/CartSlice'
 
 
 const Product = ({ post }) => {
@@ -19,10 +19,10 @@ const Product = ({ post }) => {
     toast.success("Item removed from Cart")
   }
 
-  // shadow-[0px_4px_12px_rgba(0,0,0,0.12)]
+ 
 
   return (
-    <div className='flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl outline '>
+    <div className='flex flex-col items-center justify-between hover:scale-110 transition duration-300 ease-in gap-3 p-4 mt-10 ml-5 rounded-xl  shadow-[0px_4px_12px_rgba(0,0,0,0.12)] '>
       <div>
         <p className='text-gray-700 font-semibold text-lg text-left truncate w-40 mt-1'>{post.title}</p>
       </div>
